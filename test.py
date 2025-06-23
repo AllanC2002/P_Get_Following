@@ -4,7 +4,7 @@ BASE_URL = "http://localhost:8081"
 
 # Login
 login_data = {
-    "User_mail": "ascorread",
+    "User_mail": "ascorread1",
     "password": "1234"
 }
 

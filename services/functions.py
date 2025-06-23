@@ -19,9 +19,9 @@ def get_following(user_id):
     result = [
         {
             "Id_User": p.Id_User,
-            "User_mail": p.User_mail,
-            "Name": p.Name,
-            "Lastname": p.Lastname
+            "User_mail": p.User_mail
+            #"Name": p.Name,
+            #"Lastname": p.Lastname
         } for p in following
     ]
 
