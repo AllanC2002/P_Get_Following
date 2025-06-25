@@ -3,7 +3,7 @@ from ariadne import graphql_sync, load_schema_from_path, make_executable_schema
 import jwt
 import os
 from dotenv import load_dotenv
-from graphql_resolvers import query
+from resolvers.graphql_resolvers import query
 from services.functions import get_following
 
 load_dotenv()
@@ -23,7 +23,7 @@ def get_user_from_token():
         return None
 
 # GraphQL schema + resolvers
-type_defs = load_schema_from_path("schema.graphql")
+type_defs = load_schema_from_path("schema/schema.graphql")
 schema = make_executable_schema(type_defs, query)
 
 @app.route("/following", methods=["GET"]) #Rest
