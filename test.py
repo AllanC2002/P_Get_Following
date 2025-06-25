@@ -1,10 +1,10 @@
 import requests
 
-BASE_URL = "http://52.205.152.205:8080"
+BASE_URL = "http://localhost:8080"
 
 # Login
 login_data = {
-    "User_mail": "allan2",
+    "User_mail": "allan",
     "password": "1234"
 }
 
