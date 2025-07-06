@@ -1,0 +1,14 @@
+type Following {
+  Id_User: Int
+  User_mail: String
+  Name: String
+  Lastname: String
+  Description: String
+  Id_preferences: Int
+  Id_type: Int
+  Status_account: Int
+}
+
+type Query {
+  following: [Following]
+}
